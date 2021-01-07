@@ -5,7 +5,7 @@ This tool allows you to dump, restore and sync some registry keys into a json fi
 This has been designed to "dockerize" applications that are using the registry to persist some data.
 
 ## Documentation
-
+```
 Usage: 
   DockerRegistrySync <json file path> <registry key path> [--sync]
 
@@ -26,7 +26,8 @@ Examples:
 How it works:
   This application will read the provided json file at startup, and will update the windows registry accordingly,
   then it will subscribe to registry changes and will update the json file each time a value of the registry is updated.
-  
+```
+
 ## Example
 
 An example of its usage can be found in the [docker image of plex for windows](https://github.com/dr1rrb/docker-plex-win/blob/master/PlexSetup/Run.cmd)
